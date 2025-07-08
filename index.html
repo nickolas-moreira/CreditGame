@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Credit Score Game</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>💳 Credit Score Game</h1>
+    <p>Guess the credit score grade and learn tips to improve your score!</p>
+
+    <div class="game-section">
+      <button id="startBtn">Start Game</button>
+      <div id="gameArea" class="hidden">
+        <p>Guess the grade: <strong>G</strong> (Good), <strong>A</strong> (Average), <strong>P</strong> (Poor)</p>
+        <input type="text" id="userGuess" placeholder="Enter G, A, or P" maxlength="1" />
+        <button id="submitGuess">Submit Guess</button>
+        <p id="feedback"></p>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="tips-section">
+      <h2>📈 Credit Score Tips</h2>
+      <ul>
+        <li>🕒 Always pay bills on time — payment history is 35% of your score.</li>
+        <li>💳 Keep credit usage under 30% — ideally under 10%.</li>
+        <li>📂 Don’t close old accounts — age of credit matters.</li>
+        <li>🧠 Only apply for credit when necessary — too many hard pulls = 🔻.</li>
+        <li>🔄 Check your reports yearly for errors (via AnnualCreditReport.com).</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
